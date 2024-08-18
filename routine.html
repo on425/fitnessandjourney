@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Journey</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            background-image: url('white.jpg');
+        }
+
+        * {
+            box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            background-image: url('gym-background.jpg.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 100%; /* Ensure content does not exceed viewport width */
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content h2 {
+            color: #222;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .tips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .tip {
+            flex: 1 1 calc(33% - 20px);
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tip:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="routine.js"></script>
+<body>
+    <header>
+        <h1 >Fitness Journey</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="routine.html">Routine</a>
+        <a href="tips.html">Healthy Tips</a>
+        <a href="nutrition.html">Nutrition Plans</a>
+        <a href="trainers.html">Trainer Info</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+        <h1 style="font-size: 3em;text-align: center;">Welcome to Your Fitness Journey</h1>
+
+    <section class="content"></section>
+
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fitness Journey</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url('fitness1.webp'); /* Ensure correct image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            flex: 1; /* This ensures that the content takes up available space */
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 60px auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Journey</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="routine.html">Routine</a>
+        <a href="tips.html">Healthy Tips</a>
+        <a href="nutrition.html">Nutrition Plans</a>
+        <a href="trainers.html">Trainer Info</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="content">
+        <h2>About Us</h2>
+        <p>Fitness Journey is your go-to source for reliable fitness tips, wellness routines, and health advice. We believe in empowering individuals to take control of their health and fitness, offering practical guidance to help you achieve your goals.</p>
+        <p>Our mission is to inspire and support your journey towards a healthier lifestyle, providing you with the resources and motivation you need to stay committed and reach new heights in your fitness journey.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

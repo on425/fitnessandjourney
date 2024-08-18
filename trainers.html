@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Info - Fitness Journey</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('gymmm.jpg');
+            background-color: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            flex: 1; /* This ensures that the content takes up available space */
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Adjust this margin to control space between content and footer */
+        }
+
+        .content h2 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .trainers table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .trainers th, .trainers td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .trainers th {
+            background-color: #f4f4f4;
+        }
+
+        .trainers td {
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Journey</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="routine.html">Routine</a>
+        <a href="tips.html">Healthy Tips</a>
+        <a href="nutrition.html">Nutrition Plans</a>
+        <a href="trainers.html">Trainer Info</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <h2>Trainer Information</h2>
+        <p>Meet our team of certified fitness trainers who are here to guide you every step of the way. Each trainer specializes in different areas, ensuring that you get the best advice and support tailored to your needs.</p>
+        
+        <div class="trainers">
+            <table>
+                <tr>
+                    <th>Trainer</th>
+                    <th>Specialty</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Phun Yong Heng</td>
+                    <td>Strength Training</td>
+                    <td>Yong Heng is an expert in building strength and muscle mass, with over 10 years of experience in personal training.</td>
+                </tr>
+                <tr>
+                    <td>Loo Hao Onn</td>
+                    <td>Yoga and Flexibility</td>
+                    <td>Hao Onn specializes in yoga and flexibility training, helping clients improve their range of motion and reduce stress.</td>
+                </tr>
+                <tr>
+                    <td>Yiew Lee Yik</td>
+                    <td>Cardio and Endurance</td>
+                    <td>Lee Yik's programs focus on improving cardiovascular health and endurance through high-intensity interval training (HIIT).</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

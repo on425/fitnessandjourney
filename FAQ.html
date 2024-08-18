@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Journey FAQ</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('fitness.webp'); /* Path to the uploaded image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent background */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(85, 85, 85, 0.8); /* Semi-transparent on hover */
+        }
+
+        .hero {
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+        }
+
+        .content {
+            width: 100%;
+            max-width: 100%; /* Ensure content does not exceed viewport width */
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 60px; /* Added margin to prevent footer overlap */
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            color: #333; /* Text color adjustment for readability */
+        }
+
+        .faq-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq {
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #4b4848;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question:hover {
+            background-color: #000000;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: #4d4c4c;
+            border-radius: 0 0 5px 5px;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            color: white;
+            text-align:center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Journey</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="routine.html">Routine</a>
+        <a href="tips.html">Healthy Tips</a>
+        <a href="nutrition.html">Nutrition Plans</a>
+        <a href="trainers.html">Trainer Info</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div class="content">
+        <div class="faq-section">
+            <h2>Your Questions Answered</h2>
+            
+            <div class="faq">
+                <div class="faq-question">What is the best workout routine for beginners?</div>
+                <div class="faq-answer">For beginners, a balanced workout routine including cardio, strength training, and flexibility exercises is ideal. Start with low-intensity exercises and gradually increase intensity.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">How often should I work out?</div>
+                <div class="faq-answer">Aim for at least 3-4 workouts per week, allowing for rest and recovery days. Listen to your body and adjust based on how you feel.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">What should I eat before and after workouts?</div>
+                <div class="faq-answer">Before a workout, consume a balanced meal with carbs and protein. After a workout, focus on protein-rich foods and healthy carbs to aid in recovery.</div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">How can I improve my flexibility?</div>
+                <div class="faq-answer">Incorporate stretching and yoga into your routine, focusing on dynamic stretches before workouts and static stretches afterward. Consistency is key to improving flexibility over time.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Should I do cardio before or after weight training?</div>
+                <div class="faq-answer">It depends on your goals. If your primary goal is to build strength, do weight training first when your energy levels are highest. For endurance, start with cardio.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">How do I stay motivated to work out regularly?</div>
+                <div class="faq-answer">Set realistic goals, track your progress, mix up your routines to avoid boredom, and find a workout buddy for accountability. Celebrate small victories to stay motivated.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">What are the benefits of strength training?</div>
+                <div class="faq-answer">Strength training helps build muscle, increases metabolism, improves bone density, and enhances overall physical performance. It also contributes to better posture and joint health.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">Is it better to work out in the morning or evening?</div>
+                <div class="faq-answer">The best time to work out is when you feel most energetic and can maintain consistency. Some people prefer morning workouts for a fresh start, while others perform better in the evening.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">How can I avoid workout injuries?</div>
+                <div class="faq-answer">Warm up before exercising, use proper form, avoid overtraining, and listen to your body. Gradually increase the intensity of your workouts, and don't forget to cool down and stretch afterward.</div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">What are the signs of overtraining?</div>
+                <div class="faq-answer">Signs of overtraining include persistent fatigue, decreased performance, mood swings, difficulty sleeping, and frequent injuries. If you experience these, consider taking a break and allowing your body to recover.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fitness Journey. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    document.querySelectorAll('.faq-answer').forEach(item => item.style.display = 'none'); // Close all open answers
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
